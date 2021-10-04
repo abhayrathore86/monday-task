@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "fc3a3f90-d850-404e-acb3-c31d286d7f6e",
+		"name": "Monday-Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"event\":{\n        \"type\":\"update_column_value\",\n        \"columnId\":\"status\",\n        \"pulseId\": 1744696110,\n        \"columnTitle\": \"Status\",\n        \"value\": {\n            \"label\":{\n                \"text\": \"Stuck\"\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/uploadFile",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"uploadFile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
